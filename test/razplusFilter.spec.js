@@ -152,9 +152,9 @@ describe("ell-comic-conversations.html", () => {
 		await page.click(classFilter1);
 		await page.click(remoteFilter1);
 		await timeout(2000);
-		const currentBookCount2 = await page.$eval("#currentBookCount", el => el.innerText);
-		const allBooksCount2 = await page.$eval("#allBooksCount", el => el.innerText);
-		expect(currentBookCount2).toEqual(allBooksCount2);
+		const currentBookCount3 = await page.$eval("#currentBookCount", el => el.innerText);
+		const allBooksCount3 = await page.$eval("#allBooksCount", el => el.innerText);
+		expect(currentBookCount3).toEqual(allBooksCount3);
 	}, 16000);
 });
 
